@@ -1,0 +1,39 @@
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
+  freemarker:
+    charset: UTF-8
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
+    request-context-attribute: request
+    settings:
+      number_format: 0.##########
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/xxl-job?Unicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+  mail:
+    host: smtp-mail.outlook.com
+    port: 25
+    username: leavesfall3414@outlook.com
+    password: cpyyq123
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+mybatis:
+  mapper-locations: classpath:/mybatis-mapper/*Mapper.xml
+xxl:
+  job:
+    login:
+      username: admin
+      password: 123456
+    accessToken:
+    i18n:

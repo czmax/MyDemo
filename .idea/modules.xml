@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyDemo.iml" filepath="$PROJECT_DIR$/.idea/MyDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-admin-service/demo-admin-service.iml" filepath="$PROJECT_DIR$/demo-admin-service/demo-admin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-common-api/demo-common-api.iml" filepath="$PROJECT_DIR$/demo-common-api/demo-common-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-common-service/demo-common-service.iml" filepath="$PROJECT_DIR$/demo-common-service/demo-common-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-config-service/demo-config-service.iml" filepath="$PROJECT_DIR$/demo-config-service/demo-config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-eureka-service/demo-eureka-service.iml" filepath="$PROJECT_DIR$/demo-eureka-service/demo-eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-layuiadmin-service/demo-layuiadmin-service.iml" filepath="$PROJECT_DIR$/demo-layuiadmin-service/demo-layuiadmin-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-xxl-job-admin/demo-xxl-job-admin.iml" filepath="$PROJECT_DIR$/demo-xxl-job-admin/demo-xxl-job-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-xxl-job-executor/demo-xxl-job-executor.iml" filepath="$PROJECT_DIR$/demo-xxl-job-executor/demo-xxl-job-executor.iml" />
+    </modules>
+  </component>
+</project>

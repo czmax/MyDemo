@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: demo-config-service
+  profiles:
+    active: native
+  security:
+    user:
+      name: root
+      password: root
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/leavesfall3414/config-repo.git
+          username: username
+          password: password
+          default-label: develop
+          search-paths: {application}
+        native:
+          search-locations: D:/MyProject/MyDemo/demo-config-repo/{application}
+server:
+  port: 8081
+eureka:
+  user:
+    name: root
+    password: root
+  instance:
+    appname: ${spring.application.name}
+    hostname: ${spring.application.name}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
+    metadata-map:
+      user.name: ${admin.user.name}
+      user.password: ${admin.user.password}
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${eureka.user.name}:${eureka.user.password}@localhost:8761/eureka/
+logging:
+  config: classpath:logback.xml
+admin:
+  user:
+    name: root
+    password: root
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

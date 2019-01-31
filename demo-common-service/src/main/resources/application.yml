@@ -1,0 +1,8 @@
+sendMessage:
+  appId: 7
+  interfaceUrl: http://10.237.55.185:9014/puspSystemHttpServer
+  serverMd5Key: 0123456789ABCDEF
+  tokenClientId: 201811271862187797
+  tokenClientSecret: LTdKR-Au5k3xjlFBtzoiNGctALkBaLzCgQ46PvQQVynkBVGjtd1YK4HwmpL1hA9-TVDlxqaP0cJFsuH8K2Mcc-C0CnnFV5ZrAEJwyTBDFD6aJGdB9jA8SpmVj-4Y2hCe
+  tokenTranId: MESSAGE-ACCESS-TOKEN
+  SMSTranId: MESSAGE-SINGLE-SMS

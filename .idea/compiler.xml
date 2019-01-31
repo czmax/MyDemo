@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-admin-service" />
+        <module name="demo-common-api" />
+        <module name="demo-common-service" />
+        <module name="demo-config-service" />
+        <module name="demo-eureka-service" />
+        <module name="demo-layuiadmin-service" />
+        <module name="demo-xxl-job-admin" />
+        <module name="demo-xxl-job-executor" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="demo-11111" target="1.8" />
+      <module name="demo-admin-service" target="1.8" />
+      <module name="demo-common-api" target="1.8" />
+      <module name="demo-common-service" target="1.8" />
+      <module name="demo-config-service" target="1.8" />
+      <module name="demo-eureka-service" target="1.8" />
+      <module name="demo-layuiadmin-service" target="1.8" />
+      <module name="demo-xxl-job-admin" target="1.8" />
+      <module name="demo-xxl-job-executor" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="" />
+      <module name="demo-11111" options="-parameters" />
+      <module name="demo-admin-service" options="-parameters" />
+      <module name="demo-common-api" options="-parameters" />
+      <module name="demo-common-service" options="-parameters" />
+      <module name="demo-config-service" options="-parameters" />
+      <module name="demo-eureka-service" options="-parameters" />
+      <module name="demo-layuiadmin-service" options="-parameters" />
+      <module name="demo-xxl-job-admin" options="-parameters" />
+      <module name="demo-xxl-job-executor" options="-parameters" />
+    </option>
+  </component>
+</project>

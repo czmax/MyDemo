@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: demo-layuiadmin-service
+  cloud:
+    config:
+      username: root
+      password: root
+      discovery:
+        enabled: true
+        service-id: demo-config-service
+      profile: dev
+server:
+  port: 8086
+eureka:
+  user:
+    name: root
+    password: root
+  instance:
+    prefer-ip-address: true
+    hostname: ${spring.application.name}
+    appname: ${spring.application.name}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    metadata-map:
+      user.name: ${admin.user.name}
+      user.password: ${admin.user.password}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.user.name}:${eureka.user.password}@localhost:8761/eureka/
+admin:
+  user:
+    name: root
+    password: root
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+logging:
+  config: classpath:logback.xml

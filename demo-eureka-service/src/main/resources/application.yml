@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: demo-eureka-service
+  security:
+    user:
+      name: root
+      password: root
+server:
+  port: 8761
+eureka:
+  server:
+    enable-self-preservation: false
+  instance:
+    appname: ${spring.application.name}
+    hostname: ${spring.application.name}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    prefer-ip-address: true
+    metadata-map:
+      user.name: ${admin.user.name}
+      user.password: ${admin.user.password}
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/
+logging:
+  config: classpath:logback.xml
+admin:
+  user:
+    name: root
+    password: root
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
